@@ -1,5 +1,5 @@
 ![alt text](https://aspenavionics.com/images/uploads/products/asdb_icon_homepage_03.png)
-# Aircraft intent prediction ADS-B data streams
+# Aircraft intent prediction using ADS-B data streams
 The code developed is to identify way points of an aircraft with its position, velocity, identity and other associated information to predict an aircraft's intent that infringes airspace rules with dataset analysed from OpenSky Network (open source)
 
 The aim is to analyse and predict unauthorised flight patterns of airborne aircraft within a controlled airspace (e.g., London Heathrow Airport) using ADS-B data that is broadcasted from the aircraft. The developed system is named as Airspace Infringement Detection (AID) System
