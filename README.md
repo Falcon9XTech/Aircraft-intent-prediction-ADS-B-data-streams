@@ -18,7 +18,7 @@ Requirements:
 - many more (check its file)
 
 
-PROCEDURES OF THE PROGRAM
+# PROCEDURES OF THE PROGRAM
 
 -	Fetch dataset from OpenSkyNet via SSH portal to access Hadoop shell
 - Filter and convert the fetched data ready for analysis
@@ -27,5 +27,8 @@ PROCEDURES OF THE PROGRAM
 - Create log files for security purposes such as timestamps, program use, extracted information from data etc.
 
 
-AID System flowchart
+# AID Process Chart
+![alt text](https://github.com/Falcon9XTech/Aircraft-intent-prediction-ADS-B-data-streams/blob/main/Misc/AID_ProcessChart.png)
+
+# AID System flowchart
 ![alt text](https://github.com/Falcon9XTech/Aircraft-intent-prediction-ADS-B-data-streams/blob/main/Misc/AID_Flowchart.png)
