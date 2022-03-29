@@ -33,17 +33,17 @@ PROCEDURES OF THE PROGRAM
 # AID System flowchart
 ![alt text](https://github.com/Falcon9XTech/Aircraft-intent-prediction-ADS-B-data-streams/blob/main/Misc/AID_Flowchart.png#gh-dark-mode-only)
 
-From the above flowchart, the data is fetched automatically using terminal command lines from the Subprocess to access the terminal and retrive data as requested. This is achieved in the ```fetch_data.py```
+From the above flowchart, the data is fetched automatically using terminal command lines from the Subprocess to access the terminal and retrive data as requested. This is achieved in the ```Algorithm\fetch_data.py```
 
 The data as state_vector_data4 format is extracted and stored as a csv file.
 
-Then, data is filtered and converted using pandas and pyproj library as shown in ```filter.py```.
+Then, data is filtered and converted using pandas and pyproj library as shown in ```Algorithm\filter.py```.
 
 # Visualisation of Flight routes over London Airspace
 ![alt text](https://github.com/Falcon9XTech/Aircraft-intent-prediction-ADS-B-data-streams/blob/main/Misc/airways_transparent.png#gh-dark-mode-only)
 
 
-Data is then feed to the program for analysis. We have created two conditions that best suit our system to find and identify aircraft that infringe airspace rules. This is achieved in the ```conditions.py```.
+Data is then feed to the program for analysis. We have created two conditions that best suit our system to find and identify aircraft that infringe airspace rules. This is achieved in the ```Algorithm\conditions.py```.
 
 # Condition 01
 
@@ -52,11 +52,11 @@ The aim is to search and output ```callsign```, ```icao24 address```, ```time```
 Below is the chart of the London Airspace and the two restricted areas as mentioned earlier.
 ![alt text](https://github.com/Falcon9XTech/Aircraft-intent-prediction-ADS-B-data-streams/blob/main/Misc/Southern-England_standard_Airspace.png#gh-dark-mode-only)
 
-Then, data of aircraft location (Eastings, Northings) is queried to intersect the two areas (```LTMA 11A``` and ```LTMA 4A```) that are exclusively within the ``airspace_bound`` boundary and raise alerts as shown in ```conditions.py```.
+Then, data of aircraft location (Eastings, Northings) is queried to intersect the two areas (```LTMA 11A``` and ```LTMA 4A```) that are exclusively within the ``airspace_bound`` boundary and raise alerts as shown in ```Algorithm\conditions.py```.
 
 # Time Series Prediction
 
-Data is first sorted out in ```time``` and grouped in their ```callsign```, then the initial time and location are referenced to calculate the distance covered [m] and estimate velocity [knots] of the aircraft. This is achieved in ```intent_prediction.py```.
+Data is first sorted out in ```time``` and grouped in their ```callsign```, then the initial time and location are referenced to calculate the distance covered [m] and estimate velocity [knots] of the aircraft. This is achieved in ```Algorithm\intent_prediction.py```.
 
 # Machine Learning using Gaussian Naive Bayes
 
