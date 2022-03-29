@@ -42,7 +42,7 @@ Then, data is filtered and converted using pandas and pyproj library as shown in
 # Visualisation of Flight routes over London Airspace
 ![alt text](https://github.com/Falcon9XTech/Aircraft-intent-prediction-ADS-B-data-streams/blob/main/Misc/airways_transparent.png#gh-dark-mode-only)
 
-Above Details: LHR Aiport coordinates 51° 28’ N, 0° 27’ W
+Above Details: LHR Aiport coordinates 51° 28’ N, 0° 27’ W,
 Date: 19/03/2021 , Timeframe: 7:00 to 10:00 HRS
 Total Airborne Aircraft: 95 
 
