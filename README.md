@@ -15,7 +15,7 @@ Requirements:
 - math
 - shapely
 - pyproj
-- many more (check its file)
+   many more (check its file)
 
 
 PROCEDURES OF THE PROGRAM
@@ -43,9 +43,15 @@ Then, data is filtered and converted using pandas and pyproj library as shown in
 ![alt text](https://github.com/Falcon9XTech/Aircraft-intent-prediction-ADS-B-data-streams/blob/main/Misc/airways_transparent.png#gh-dark-mode-only)
 
 
-It is then feed to the program for analysis. We have created two conditions that best suit our system to find and identify aircraft that infringe airspace rules. This is achieved in the ```conditions.py``` file
+Data is then feed to the program for analysis. We have created two conditions that best suit our system to find and identify aircraft that infringe airspace rules. This is achieved in the ```conditions.py``` file
 
 # Condition 01
+
+The aim is to search and output ```callsign```, ```icao24 address```, ```time``` and ```location``` of the aircraft that is in breach of Rules of Air Annex 02 - section 3.1.10 within the LTMA restricted areas (D132/2.5 and D104/2.4) -- this is to illustrate the search of two areas only, but would be necessary to include other restricted areas.
+
+Below is the chart of the London Airspace and the two restricted areas as mentioned earlier.
+![alt text](https://github.com/Falcon9XTech/Aircraft-intent-prediction-ADS-B-data-streams/blob/main/Misc/Southern-England_standard_Airspace.png#gh-dark-mode-only)
+
 
 
 
