@@ -15,7 +15,7 @@ Requirements:
 - math
 - shapely
 - pyproj
-   many more (check its file)
+   and many more (check its file)
 
 
 PROCEDURES OF THE PROGRAM
