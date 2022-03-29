@@ -1,0 +1,12 @@
+pandas
+geopandas
+numpy
+sklearn
+math
+shapely
+pyproj
+traffic 
+opensky 
+datetime
+os
+tkinter
