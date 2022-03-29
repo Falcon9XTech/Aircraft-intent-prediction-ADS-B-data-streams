@@ -40,7 +40,7 @@ The data as state_vector_data4 format is extracted and stored as a csv file.
 Then, data is filtered and converted using pandas and pyproj library as shown in ```filter.py```
 
 # Visualisation of Flight routes over London Airspace
-![alt text](https://github.com/Falcon9XTech/Aircraft-intent-prediction-ADS-B-data-streams/blob/main/Misc/01_airways_transparent.png#gh-dark-mode-only)
+![alt text](https://github.com/Falcon9XTech/Aircraft-intent-prediction-ADS-B-data-streams/blob/main/Misc/airways_transparent.png#gh-dark-mode-only)
 
 
 It is then feed to the program for analysis. We have created two conditions that best suit our system to find and identify aircraft that infringe airspace rules. This is achieved in the ```conditions.py``` file
