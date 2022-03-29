@@ -4,7 +4,7 @@ The code developed is to identify way points of an aircraft with its position, v
 
 The aim is to analyse and predict unauthorised flight patterns of airborne aircraft within a controlled airspace (e.g., London Heathrow Airport) using ADS-B data that is broadcasted from the aircraft. The developed system is named as Airspace Infringement Detection (AID) System
 
-To run the program, it is recommended to download Python3.6 or above and have its dependencies listed in the ```requirements.txt``` file installed. It is also recommended to run the program on a macOS platform since the code base is developed under it.
+To run the program, it is recommended to download ```Python3.6 or above```, ```conda``` and have its dependencies listed in the ```requirements.txt``` installed. It is also recommended to run the program on a macOS platform since the code-base is developed under it. The main code can be converted to an executable file by renaming ```main.py``` to ```main.command``` and run command ```chmod +x main.command``` in the terminal shell to finalise the process of converting it to ```main.command``` 
 
 Requirements:
 
