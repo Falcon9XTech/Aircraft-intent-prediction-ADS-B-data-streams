@@ -84,7 +84,7 @@ The decision boundary helps to classify the data (for this case, we'll show the 
 
 # Condition 02
 
-This section is still under development. 
+This section is still under development.
 
 
 
