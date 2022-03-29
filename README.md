@@ -43,7 +43,7 @@ Then, data is filtered and converted using pandas and pyproj library as shown in
 ![alt text](https://github.com/Falcon9XTech/Aircraft-intent-prediction-ADS-B-data-streams/blob/main/Misc/airways_transparent.png#gh-dark-mode-only)
 
 
-Data is then feed to the program for analysis. We have created two conditions that best suit our system to find and identify aircraft that infringe airspace rules. This is achieved in the ```conditions.py``` file
+Data is then feed to the program for analysis. We have created two conditions that best suit our system to find and identify aircraft that infringe airspace rules. This is achieved in the ```conditions.py``` file.
 
 # Condition 01
 
@@ -52,6 +52,11 @@ The aim is to search and output ```callsign```, ```icao24 address```, ```time```
 Below is the chart of the London Airspace and the two restricted areas as mentioned earlier.
 ![alt text](https://github.com/Falcon9XTech/Aircraft-intent-prediction-ADS-B-data-streams/blob/main/Misc/Southern-England_standard_Airspace.png#gh-dark-mode-only)
 
+Then, data of aircraft location (Eastings, Northings) is queried to intersect the two areas (```LTMA 11A``` and ```LTMA 4A```) that are exclusively within the ``airspace_bound`` boundary and raise alerts as shown in ```conditions.py``` file.
+
+# Time Series Prediction
+
+Data is first sorted out in ```time``` and grouped in their ```callsign```, then the initial time and location are referenced to calculate the distance covered [m] and estimate velocity [knots] of the aircraft. This is achieved in ```intent_prediction.py``` file.
 
 
 
