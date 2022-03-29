@@ -4,7 +4,7 @@ The code developed is to identify way points of an aircraft with its position, v
 
 The aim is to analyse and predict unauthorised flight patterns of airborne aircraft within a controlled airspace (e.g., London Heathrow Airport) using ADS-B data that is broadcasted from the aircraft. The developed system is named as Airspace Infringement Detection (AID) System
 
-To run the program, it is recommended to download Python3.6 or above and have its dependencies listed in the requirements.txt file installed. It is also recommended to run the program on a macOS platform since the code base is developed under it.
+To run the program, it is recommended to download Python3.6 or above and have its dependencies listed in the ```requirements.txt``` file installed. It is also recommended to run the program on a macOS platform since the code base is developed under it.
 
 Requirements:
 
@@ -34,5 +34,20 @@ PROCEDURES OF THE PROGRAM
 ![alt text](https://github.com/Falcon9XTech/Aircraft-intent-prediction-ADS-B-data-streams/blob/main/Misc/AID_Flowchart.png#gh-dark-mode-only)
 
 From the above flowchart, the data is fetched automatically using terminal command lines from the Subprocess to access the terminal and retrive data as requested. This is achieved in the ```fetch_data.py```
+
+The data as state_vector_data4 format is extracted and stored as a csv file.
+
+Then, data is filtered and converted using pandas and pyproj library as shown in ```filter.py```
+
+# Visualisation of Flight routes over London Airspace
+![alt text](https://github.com/Falcon9XTech/Aircraft-intent-prediction-ADS-B-data-streams/blob/main/Misc/01_airways_transparent.png#gh-dark-mode-only)
+
+
+It is then feed to the program for analysis. We have created two conditions that best suit our system to find and identify aircraft that infringe airspace rules. This is achieved in the ```conditions.py``` file
+
+# Condition 01
+
+
+
 
 
