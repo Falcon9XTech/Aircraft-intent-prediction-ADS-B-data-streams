@@ -28,5 +28,5 @@ PROCEDURES OF THE PROGRAM
 
 
 AID System flowchart
-![alt text](https://github.com/Falcon9XTech/Aircraft-intent-prediction-ADS-B-data-streams/blob/main/Misc/AID_Flowchart.png)
+![image](https://github.com/Falcon9XTech/Aircraft-intent-prediction-ADS-B-data-streams/blob/main/Misc/AID_Flowchart.png) {width=800 height=800}
 
