@@ -22,7 +22,7 @@ PROCEDURES OF THE PROGRAM
 
 -	Fetch dataset from OpenSkyNet via SSH portal to access Hadoop shell
 - Filter and convert the fetched data ready for analysis
--	Feed data to set of conditions to identify aircraft flying within or out of their Airspace and flying over or under prohibited areas within London Terminal Manoeuvring Airspace (LTMA) or Controlled zones (CTA) -- raise an alert when a breach of Air Law.
+-	Feed data to set of conditions to identify aircraft flying within or out of their Airspace and flying over or under prohibited areas within London Terminal Manoeuvring Area (LTMA) or Controlled areas (CTA) -- raise an alert when a breach of Air Law occurs.
 -	Further prediction using mathematical models: Bayesian Naive Network for future datasets analysed.
 - Create log files for security purposes such as timestamps, program use, extracted information from data etc.
 
