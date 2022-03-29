@@ -37,13 +37,13 @@ From the above flowchart, the data is fetched automatically using terminal comma
 
 The data as state_vector_data4 format is extracted and stored as a csv file.
 
-Then, data is filtered and converted using pandas and pyproj library as shown in ```filter.py```
+Then, data is filtered and converted using pandas and pyproj library as shown in ```filter.py```.
 
 # Visualisation of Flight routes over London Airspace
 ![alt text](https://github.com/Falcon9XTech/Aircraft-intent-prediction-ADS-B-data-streams/blob/main/Misc/airways_transparent.png#gh-dark-mode-only)
 
 
-Data is then feed to the program for analysis. We have created two conditions that best suit our system to find and identify aircraft that infringe airspace rules. This is achieved in the ```conditions.py``` file.
+Data is then feed to the program for analysis. We have created two conditions that best suit our system to find and identify aircraft that infringe airspace rules. This is achieved in the ```conditions.py```.
 
 # Condition 01
 
@@ -52,12 +52,27 @@ The aim is to search and output ```callsign```, ```icao24 address```, ```time```
 Below is the chart of the London Airspace and the two restricted areas as mentioned earlier.
 ![alt text](https://github.com/Falcon9XTech/Aircraft-intent-prediction-ADS-B-data-streams/blob/main/Misc/Southern-England_standard_Airspace.png#gh-dark-mode-only)
 
-Then, data of aircraft location (Eastings, Northings) is queried to intersect the two areas (```LTMA 11A``` and ```LTMA 4A```) that are exclusively within the ``airspace_bound`` boundary and raise alerts as shown in ```conditions.py``` file.
+Then, data of aircraft location (Eastings, Northings) is queried to intersect the two areas (```LTMA 11A``` and ```LTMA 4A```) that are exclusively within the ``airspace_bound`` boundary and raise alerts as shown in ```conditions.py```.
 
 # Time Series Prediction
 
-Data is first sorted out in ```time``` and grouped in their ```callsign```, then the initial time and location are referenced to calculate the distance covered [m] and estimate velocity [knots] of the aircraft. This is achieved in ```intent_prediction.py``` file.
+Data is first sorted out in ```time``` and grouped in their ```callsign```, then the initial time and location are referenced to calculate the distance covered [m] and estimate velocity [knots] of the aircraft. This is achieved in ```intent_prediction.py```.
 
+# Machine Learning using Gaussian Naive Bayes
+
+To make prediction more accurately, it is important to implement a machine learning algorithm to be able to predict values or future outcomes. The observations are taken from columns ```airspace_bound```, ```LTMA_11_A```,```LTMA_4_A``` as features and ```C1_outcome``` as the target.
+
+A portion of the data is set for training (70%) and the remaining (30%) is set for testing. The results are shown below; But this raises the question of overfitting when the accuracy is above (90%) that the data has been trained without considering errors.
+
+![alt text](https://github.com/Falcon9XTech/Aircraft-intent-prediction-ADS-B-data-streams/blob/main/Misc/C1_Outcome.png#gh-dark-mode-only)
+
+
+
+
+
+# Condition 02
+
+This section is still under development.
 
 
 
