@@ -66,8 +66,17 @@ A portion of the data is set for training (70%) and the remaining (30%) is set f
 
 ![alt text](https://github.com/Falcon9XTech/Aircraft-intent-prediction-ADS-B-data-streams/blob/main/Misc/C1_Outcome.png#gh-dark-mode-only)
 
+The classification report of the Trained Data is shown below.
 
+![alt text](https://github.com/Falcon9XTech/Aircraft-intent-prediction-ADS-B-data-streams/blob/main/Misc/classification_report.png#gh-dark-mode-only)
 
+This has to be corrected by use of K-fold cross validation, therefore part of the data is set for vaildation and the data is split into different dataset each used for training and a portion for validation, until the process is complete. The outcome of this has achieved an accuracy of about 99.95%
+
+![alt text](https://github.com/Falcon9XTech/Aircraft-intent-prediction-ADS-B-data-streams/blob/main/Misc/K-fold_cross_validation.png#gh-dark-mode-only)
+
+The decision boundary helps to classify the data (for this case, we'll show the tested data) as shown below; ```Class 0 = not_within_London_airspace```, ```Class 1 = clear```, ```Class 2 = warning_above_restricted_area```
+
+![alt text](https://github.com/Falcon9XTech/Aircraft-intent-prediction-ADS-B-data-streams/blob/main/Misc/decision_boundary.png#gh-dark-mode-only)
 
 
 # Condition 02
