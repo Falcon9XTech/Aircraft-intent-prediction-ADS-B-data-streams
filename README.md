@@ -18,7 +18,7 @@ Requirements:
 - many more (check its file)
 
 
-# PROCEDURES OF THE PROGRAM
+PROCEDURES OF THE PROGRAM
 
 -	Fetch dataset from OpenSkyNet via SSH portal to access Hadoop shell
 - Filter and convert the fetched data ready for analysis
@@ -28,7 +28,11 @@ Requirements:
 
 
 # AID Process Chart
-![alt text](https://github.com/Falcon9XTech/Aircraft-intent-prediction-ADS-B-data-streams/blob/main/Misc/AID_ProcessChart.png)
+![alt text](https://github.com/Falcon9XTech/Aircraft-intent-prediction-ADS-B-data-streams/blob/main/Misc/AID_ProcessChart.png#gh-dark-mode-only)
 
 # AID System flowchart
-![alt text](https://github.com/Falcon9XTech/Aircraft-intent-prediction-ADS-B-data-streams/blob/main/Misc/AID_Flowchart.png)
+![alt text](https://github.com/Falcon9XTech/Aircraft-intent-prediction-ADS-B-data-streams/blob/main/Misc/AID_Flowchart.png#gh-dark-mode-only)
+
+From the above flowchart, the data is fetched automatically using terminal command lines from the Subprocess to access the terminal and retrive data as requested. This is achieved in the fetch_data.py
+
+
