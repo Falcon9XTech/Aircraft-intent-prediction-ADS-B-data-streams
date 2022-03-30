@@ -35,7 +35,7 @@ PROCEDURES OF THE PROGRAM
 
 From the above flowchart, the data is fetched automatically using terminal command lines from the Subprocess to access the terminal and retrive data as requested. This is achieved in the ```Algorithm\fetch_data.py```
 
-The data as state_vector_data4 format is extracted and stored as a csv file.
+The data as ```state_vector_data4``` format is extracted and stored as a csv file.
 
 Then, data is filtered and converted using pandas and pyproj library as shown in ```Algorithm\filter.py```.
 
